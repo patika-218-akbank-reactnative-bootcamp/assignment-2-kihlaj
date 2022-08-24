@@ -3,6 +3,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {createMaterialTopTabNavigator} from '@react-navigation/material-top-tabs';
 
+import TopNavbar from './components/TopNavbar';
 import Chats from './pages/Chats';
 import Status from './pages/Status';
 import Calls from './pages/Calls';
@@ -10,7 +11,6 @@ import Context from '../context/Context';
 import ContextWrapper from '../context/ContextWrapper';
 import {Text} from 'react-native';
 
-const Stack = createNativeStackNavigator();
 const Tab = createMaterialTopTabNavigator();
 
 const App = () => {
@@ -19,22 +19,8 @@ const App = () => {
   } = React.useContext(Context);
   return (
     <NavigationContainer>
-      <Stack.Navigator
-        screenOptions={{
-          headerStyle: {
-            backgroundColor: colors.foreground,
-            shadowOpacity: 0,
-            elevation: 0,
-          },
-          headerTintColor: colors.white,
-          headerShadowVisible: false,
-        }}>
-        <Stack.Screen
-          name="Home"
-          options={{title: 'Whatsapp'}}
-          component={Home}
-        />
-      </Stack.Navigator>
+      <TopNavbar />
+      <Home />
     </NavigationContainer>
   );
 };
