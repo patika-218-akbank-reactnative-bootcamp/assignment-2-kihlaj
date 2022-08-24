@@ -3,7 +3,7 @@ import React from 'react';
 
 import styles from './Chats.style';
 
-const HomeScreen = () => {
+const Chats = () => {
   return (
     <View>
       <Text>HomeScreen</Text>
@@ -11,4 +11,4 @@ const HomeScreen = () => {
   );
 };
 
-export default HomeScreen;
+export default Chats;
