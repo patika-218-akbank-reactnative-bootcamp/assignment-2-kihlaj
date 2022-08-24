@@ -1,13 +1,14 @@
-import { View, Text } from 'react-native';
+import { Pressable, Text, TouchableOpacity, View } from 'react-native';
 import React from 'react';
+import AntDesign from 'react-native-vector-icons/AntDesign';
 
-import ContactsFloatingIcon from './ContactsFloatingIcon.style';
+import styles from './ContactsFloatingIcon.style';
 
-const ContactsFloatingIcon = () => {
+const ContactsFloatingIcon = ({ name }) => {
   return (
-    <View>
-      <Text>ContactsFloatingIcon</Text>
-    </View>
+    <TouchableOpacity style={styles.iconWrapper}>
+      <AntDesign name={name} size={28} color="white" />
+    </TouchableOpacity>
   );
 };
 

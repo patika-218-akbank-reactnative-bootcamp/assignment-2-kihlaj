@@ -8,7 +8,7 @@ const Chats = () => {
   return (
     <View>
       <Text>Chats</Text>
-      <ContactsFloatingIcon />
+      <ContactsFloatingIcon name="message1" />
     </View>
   );
 };
