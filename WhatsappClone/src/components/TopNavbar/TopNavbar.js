@@ -11,9 +11,18 @@ const TopNavbar = () => {
       <View style={{ flex: 1, padding: 12 }}>
         <Text style={styles.topNavbarText}>WhatsApp</Text>
       </View>
-      <View style={{ flex: 1, flexDirection: 'row-reverse', padding: 10 }}>
-        <Entypo name="dots-three-vertical" color="white" size={25} />
-        <AntDesign name="search1" color="white" size={25} />
+      <View style={{ flex: 1, flexDirection: 'row-reverse', padding: 12 }}>
+        <Entypo
+          style={{ marginLeft: 18 }}
+          name="dots-three-vertical"
+          color="white"
+          size={23}
+        />
+        <AntDesign
+          name="search1"
+          color="white"
+          size={23}
+        />
       </View>
     </View>
   );
