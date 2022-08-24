@@ -9,19 +9,27 @@ import Status from './pages/Status';
 import Calls from './pages/Calls';
 import Context from '../context/Context';
 import ContextWrapper from '../context/ContextWrapper';
-import { Text, View } from 'react-native';
 
 const Tab = createMaterialTopTabNavigator();
+const Stack = createNativeStackNavigator();
 
 const App = () => {
   const {
     theme: { colors },
   } = React.useContext(Context);
   return (
-    <NavigationContainer>
-      <TopNavbar />
-      <Home />
-    </NavigationContainer>
+    <ContextWrapper>
+      <NavigationContainer>
+        <Stack.Navigator screenOptions={{ header: TopNavbar }}>
+          <Stack.Screen name="home" component={Home} />
+          {/* <Stack.Screen
+            name="home"
+            options={{ title: 'Whatsapp' }}
+            component={Home}
+          /> */}
+        </Stack.Navigator>
+      </NavigationContainer>
+    </ContextWrapper>
   );
 };
 
@@ -53,12 +61,4 @@ function Home() {
   );
 }
 
-function Main() {
-  return (
-    <ContextWrapper>
-      <App />
-    </ContextWrapper>
-  );
-}
-
-export default Main;
+export default App;
