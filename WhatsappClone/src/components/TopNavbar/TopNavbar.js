@@ -8,12 +8,12 @@ import styles from './TopNavbar.style';
 const TopNavbar = () => {
   return (
     <View style={styles.topNavbarWrapper}>
-      <View style={{ flex: 1 }}>
-        <Text style={styles.topNavbarText}>Whatsapp</Text>
+      <View style={{ flex: 1, padding: 12 }}>
+        <Text style={styles.topNavbarText}>WhatsApp</Text>
       </View>
-      <View style={{ flex: 1 }}>
-        <AntDesign name="home" color="white" size={30} />
-        <Entypo name="home" color="white" size={30} />
+      <View style={{ flex: 1, flexDirection: 'row-reverse', padding: 10 }}>
+        <Entypo name="dots-three-vertical" color="white" size={25} />
+        <AntDesign name="search1" color="white" size={25} />
       </View>
     </View>
   );

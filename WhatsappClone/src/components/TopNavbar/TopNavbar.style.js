@@ -7,9 +7,11 @@ export default StyleSheet.create({
   topNavbarWrapper: {
     height: 50,
     backgroundColor: theme.colors.foreground,
-    // justifyContent: 'flex-end',
+    flexDirection: 'row',
   },
   topNavbarText: {
-    color: theme.colors.secondaryText,
+    color: theme.colors.text,
+    fontSize: 20,
+    fontWeight: '500',
   },
 });

@@ -6,7 +6,7 @@ import styles from './Chats.style';
 const Chats = () => {
   return (
     <View>
-      <Text>HomeScreen</Text>
+      <Text>Chats</Text>
     </View>
   );
 };
