@@ -1,5 +1,5 @@
-import { Pressable, Text, TouchableOpacity, View } from 'react-native';
 import React from 'react';
+import { TouchableOpacity } from 'react-native';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 
 import styles from './ContactsFloatingIcon.style';

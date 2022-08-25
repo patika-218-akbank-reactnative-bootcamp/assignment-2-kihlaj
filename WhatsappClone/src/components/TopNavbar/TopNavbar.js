@@ -1,15 +1,16 @@
-import { View, Text, TouchableOpacity } from 'react-native';
 import React from 'react';
+import { View, Text, TouchableOpacity } from 'react-native';
 import Entypo from 'react-native-vector-icons/Entypo';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 
 import styles from './TopNavbar.style';
 
-const TopNavbar = () => {
+// could and maybe should have add icons as props!
+const TopNavbar = ({ text }) => {
   return (
     <View style={styles.topNavbarWrapper}>
       <View style={{ flex: 1, padding: 12 }}>
-        <Text style={styles.topNavbarText}>WhatsApp</Text>
+        <Text style={styles.topNavbarText}>{text}</Text>
       </View>
       <View style={{ flex: 1, flexDirection: 'row-reverse', padding: 12 }}>
         <TouchableOpacity>
