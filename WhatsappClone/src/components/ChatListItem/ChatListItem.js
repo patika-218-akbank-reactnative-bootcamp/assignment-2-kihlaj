@@ -1,4 +1,4 @@
-import { View, Text, Image, TouchableWithoutFeedback } from 'react-native';
+import { View, Text, Image, Pressable } from 'react-native';
 import React from 'react';
 import moment from 'moment';
 import { useNavigation } from '@react-navigation/native';
@@ -6,16 +6,20 @@ import { useNavigation } from '@react-navigation/native';
 import styles from './ChatListItem.style';
 
 const ChatListItem = props => {
+  // getting dummy data
   const { chatList } = props;
 
+  // a hook which gives access to navigation object
   const navigation = useNavigation();
 
+  // onClick function to navigate to chat page
   const onClick = () => {
-    navigation.navigate('Chat');
+    navigation.navigate('Chat', { id: chatList.id });
   };
 
   return (
-    <TouchableWithoutFeedback onPress={onClick}>
+    // onPress is a function which is called when the user presses down, and then releases
+    <Pressable onPress={onClick}>
       <View style={styles.container}>
         <View style={styles.leftContainer}>
           <Image
@@ -23,7 +27,7 @@ const ChatListItem = props => {
             style={styles.image}
           />
           <View style={styles.middleContainer}>
-            {/* TODO: After 20 characters you can put ... like you used in instagram clone */}
+            {/* TODO: After 20 characters you can put "..." at the end, you used in instagram clone */}
             <Text style={styles.userName}>{chatList.receiver.firstName}</Text>
             <Text style={styles.lastMessage}>{chatList.messages[0].text}</Text>
           </View>
@@ -33,7 +37,7 @@ const ChatListItem = props => {
           {moment(chatList.messages[0].dateTime).format('DD/MM/YYYY')}
         </Text>
       </View>
-    </TouchableWithoutFeedback>
+    </Pressable>
   );
 };
 

@@ -7,7 +7,7 @@ import AntDesign from 'react-native-vector-icons/AntDesign';
 // import TopNavbar from './components/TopNavbar';
 import ContextWrapper from '../context/ContextWrapper';
 import TabNavigator from './TabNavigator';
-import Chat from './components/Chat';
+import Chat from './pages/Chat';
 import { theme } from '../utils';
 import { TouchableOpacity, View } from 'react-native';
 import TopNavbar from './components/TopNavbar/TopNavbar';
