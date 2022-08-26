@@ -5,8 +5,8 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import TopNavbar from './components/TopNavbar';
 import ContextWrapper from '../context/ContextWrapper';
 import TabNavigator from './TabNavigator';
-import Chat from './components/Chat';
 import ChatHeader from './components/ChatHeader';
+import ChatListItem from './components/ChatListItem';
 
 const Stack = createNativeStackNavigator();
 
@@ -19,7 +19,7 @@ const App = () => {
           <Stack.Screen name="home" component={TabNavigator} />
           <Stack.Screen
             name="chat"
-            component={Chat}
+            component={ChatListItem}
 
             // options={{ headerTitle: props => <ChatHeader {...props} /> }}
           />
