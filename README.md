@@ -7,7 +7,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="./whatsappclone/assets/WhatsApp-Logo.png" alt="Logo" width="80" height="80">
+    <img src="./WhatsappClone/assets/WhatsApp-Logo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Whatsapp Clone</h3>
@@ -17,7 +17,7 @@
     <br />
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="https://www.loom.com/share/e3f6d4e1ef7c4eaa89abbd59a7bed97c">Watch the Demo</a>
     ·
     <a href="https://github.com/patika-218-akbank-reactnative-bootcamp/assignment-2-kihlaj/issues">Report Bug</a>
     ·
@@ -169,4 +169,4 @@ Project Link: [Whatsapp Clone](https://github.com/patika-218-akbank-reactnative-
 [license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/bbilginerdem/
-[product-screenshot]: ./whatsappclone/assets/whatsapp-clone.png
+[product-screenshot]: ./WhatsappClone/assets/whatsapp-clone.png
