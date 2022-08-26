@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, Button } from 'react-native';
+import { View, Text, Button, FlatList } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
@@ -8,19 +8,16 @@ import ContactsFloatingIcon from '../../components/ContactsFloatingIcon';
 import ChatListItem from '../../components/ChatListItem';
 import chatList from '../../../data/chatList';
 
-const Chats = ({ navigation }) => {
+const Chats = () => {
   return (
     <View style={{}}>
-      {/* <Button
-        title="chat"
-        onPress={() => {
-          navigation.navigate('Details', {
-            itemId: 86,
-            otherParam: 'anything',
-          });
-        }}
-      /> */}
-      <ChatListItem chatList={chatList[0]} />
+      <FlatList
+        style={styles.container}
+        data={chatList}
+        renderItem={({ item }) => (
+          <ChatListItem chatList={item} keyExtractor={item => item.id} />
+        )}
+      />
       <ContactsFloatingIcon name="message1" />
     </View>
   );

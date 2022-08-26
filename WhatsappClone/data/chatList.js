@@ -44,6 +44,66 @@ const chatList = [
       },
     ],
   },
+  {
+    id: '4',
+    receiver: {
+      id: 'r4',
+      firstName: 'Walte4',
+      lastName: 'White',
+      image: 'https://placekitten.com/g/300/304',
+    },
+    messages: [
+      {
+        text: 'Hell4',
+        dateTime: '2021-06-20T19:00:00.000Z',
+      },
+    ],
+  },
+  {
+    id: '5',
+    receiver: {
+      id: 'r5',
+      firstName: 'Walte5',
+      lastName: 'White',
+      image: 'https://placekitten.com/g/300/305',
+    },
+    messages: [
+      {
+        text: 'Hell5',
+        dateTime: '2021-06-20T19:00:00.000Z',
+      },
+    ],
+  },
+  {
+    id: '6',
+    receiver: {
+      id: 'r6',
+      firstName: 'Walte6',
+      lastName: 'White',
+      image: 'https://placekitten.com/g/300/306',
+    },
+    messages: [
+      {
+        text: 'Hell5',
+        dateTime: '2021-06-20T19:00:00.000Z',
+      },
+    ],
+  },
+  {
+    id: '7',
+    receiver: {
+      id: 'r7',
+      firstName: 'Serious',
+      lastName: 'Lee',
+      image: 'https://placekitten.com/g/300/307',
+    },
+    messages: [
+      {
+        text: 'Be like water my friend',
+        dateTime: '2021-06-20T19:00:00.000Z',
+      },
+    ],
+  },
 ];
 
 export default chatList;
