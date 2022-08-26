@@ -3,14 +3,10 @@ import { StyleSheet } from 'react-native';
 import { theme } from '../../../utils';
 
 export default StyleSheet.create({
-  topNavbarWrapper: {
-    height: 50,
-    backgroundColor: theme.colors.foreground,
+  container: {
     flexDirection: 'row',
-  },
-  topNavbarText: {
-    color: theme.colors.text,
-    fontSize: 20,
-    fontWeight: '500',
+    padding: 15,
+    width: 90,
+    justifyContent: 'space-between',
   },
 });

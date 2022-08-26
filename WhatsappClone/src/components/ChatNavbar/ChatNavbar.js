@@ -7,15 +7,15 @@ import styles from './ChatNavbar.style';
 
 const ChatNavbar = () => {
   return (
-    <View>
+    <View style={styles.container}>
       <Pressable>
-        <AntDesign name="videocamera" color="white" size={20} />
+        <AntDesign name="videocamera" color="white" size={23} />
       </Pressable>
       <Pressable>
-        <AntDesign name="phone" color="white" size={20} />
+        <AntDesign name="phone" color="white" size={23} />
       </Pressable>
       <Pressable>
-        <Entypo name="dots-three-vertical" color="white" size={20} />
+        <Entypo name="dots-three-vertical" color="white" size={23} />
       </Pressable>
     </View>
   );
