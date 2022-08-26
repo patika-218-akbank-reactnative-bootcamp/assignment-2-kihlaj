@@ -20,7 +20,8 @@ const App = () => {
           <Stack.Screen
             name="chat"
             component={Chat}
-            options={{ headerTitle: props => <ChatHeader {...props} /> }}
+
+            // options={{ headerTitle: props => <ChatHeader {...props} /> }}
           />
         </Stack.Navigator>
       </NavigationContainer>
