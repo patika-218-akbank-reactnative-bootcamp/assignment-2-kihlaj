@@ -31,36 +31,7 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-I used react-native-vector-icons and react-navigation along with style sheets.
-
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-
--   npm
-    ```sh
-    npm install npm@latest -g
-    ```
-
-### Installation
-
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-    ```sh
-    git clone https://github.com/your_username_/Project-Name.git
-    ```
-3. Install NPM packages
-    ```sh
-    npm install
-    ```
-4. Enter your API in `config.js`
-    ```js
-    const API_KEY = "ENTER YOUR API";
-    ```
-
-<!-- USAGE EXAMPLES -->
+I used react-native-vector-icons and react-navigation along with style sheets. Currently, other than chats screens are empty and in the future I intend to code those.
 
 ## Usage
 
@@ -106,21 +77,17 @@ Don't forget to give the project a star! Thanks again!
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- LICENSE -->
 
 ## License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- CONTACT -->
 
 ## Contact
 
-Your Name - [@BilginBehzat](https://twitter.com/BilginBehzat) - bbilgin.erdem@gmail.com
+[@BilginBehzat](https://twitter.com/BilginBehzat) - bbilgin.erdem@gmail.com
 
 Project Link: [Whatsapp Clone](https://github.com/patika-218-akbank-reactnative-bootcamp/assignment-2-kihlaj)
 

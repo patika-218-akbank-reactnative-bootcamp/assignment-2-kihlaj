@@ -8,6 +8,8 @@ export default StyleSheet.create({
     borderRadius: 15,
     padding: 8,
   },
+  sent: { backgroundColor: theme.colors.tertiary, marginLeft: 50 },
+  received: { backgroundColor: theme.colors.text, marginRight: 50 },
   message: { color: 'black', fontSize: 15 },
   name: { color: theme.colors.tertiary },
   time: { alignSelf: 'flex-end', color: 'grey' },

@@ -9,23 +9,23 @@ const ChatInput = ({ firstIcon, secondIcon, thirdIcon, fourthIcon }) => {
   return (
     <View style={styles.container}>
       <View style={styles.mainContainer}>
-        <AntDesign name={firstIcon} size={24} color="grey" />
+        <AntDesign name={firstIcon} size={25} color="grey" />
         <TextInput
           placeholder={'Type a message'}
           style={styles.textInput}
           name="text"
           multiline
         />
-        <Entypo name={secondIcon} size={24} color="grey" style={styles.icon} />
+        <Entypo name={secondIcon} size={25} color="grey" style={styles.icon} />
         <AntDesign
           name={thirdIcon}
-          size={24}
+          size={25}
           color="grey"
           style={styles.icon}
         />
       </View>
-      <View style={styles.buttonContainer}>
-        <Entypo name={fourthIcon} size={28} color="white" />
+      <View style={styles.leftContainer}>
+        <Entypo name={fourthIcon} size={30} color="white" />
       </View>
     </View>
   );

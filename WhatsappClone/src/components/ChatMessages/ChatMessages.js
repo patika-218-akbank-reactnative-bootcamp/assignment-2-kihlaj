@@ -3,13 +3,12 @@ import React from 'react';
 import moment from 'moment';
 
 import styles from './ChatMessages.style';
-import { theme } from '../../../utils';
 
 const ChatMessages = props => {
   const { message } = props;
 
   // to differentiate between sent and received messages
-  const isMyMessage = () => {
+  const sentMessage = () => {
     return message.user.id === 'u1';
   };
 
@@ -18,14 +17,7 @@ const ChatMessages = props => {
       <View
         style={[
           styles.messageBox,
-          // inline css used since logic cannot be done in stylesheet
-          {
-            backgroundColor: isMyMessage()
-              ? theme.colors.tertiary
-              : theme.colors.text,
-            marginLeft: isMyMessage() ? 50 : 0,
-            marginRight: isMyMessage() ? 0 : 50,
-          },
+          sentMessage() ? styles.sent : styles.received,
         ]}>
         <Text style={styles.message}>{message.content}</Text>
         <Text style={styles.time}>{moment(message.createdAt).fromNow()}</Text>

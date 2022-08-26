@@ -7,7 +7,7 @@ export default StyleSheet.create({
     flexDirection: 'row',
     margin: 10,
     alignItems: 'flex-end',
-    padding: 2,
+    padding: 10,
   },
   mainContainer: {
     flexDirection: 'row',
@@ -25,7 +25,7 @@ export default StyleSheet.create({
   icon: {
     marginHorizontal: 5,
   },
-  buttonContainer: {
+  leftContainer: {
     backgroundColor: theme.colors.foreground,
     borderRadius: 25,
     width: 50,
