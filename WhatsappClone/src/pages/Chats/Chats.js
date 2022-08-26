@@ -13,7 +13,7 @@ const Chats = () => {
         style={styles.container}
         data={chatList}
         renderItem={({ item }) => (
-          <ChatListItem chatList={item} keyExtractor={item => item.id} />
+          <ChatListItem chatList={item} keyExtractor={item.id} />
         )}
       />
       <ContactsFloatingIcon name="message1" />
