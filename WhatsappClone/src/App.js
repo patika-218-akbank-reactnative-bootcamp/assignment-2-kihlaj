@@ -1,11 +1,16 @@
 import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import Entypo from 'react-native-vector-icons/Entypo';
+import AntDesign from 'react-native-vector-icons/AntDesign';
 
-import TopNavbar from './components/TopNavbar';
+// import TopNavbar from './components/TopNavbar';
 import ContextWrapper from '../context/ContextWrapper';
 import TabNavigator from './TabNavigator';
 import Chat from './components/Chat';
+import { theme } from '../utils';
+import { TouchableOpacity, View } from 'react-native';
+import TopNavbar from './components/TopNavbar/TopNavbar';
 
 const Stack = createNativeStackNavigator();
 
@@ -14,10 +19,29 @@ const App = () => {
     <ContextWrapper>
       <NavigationContainer>
         <Stack.Navigator
-          screenOptions={{ header: () => <TopNavbar text="WhatsApp" /> }}>
-          <Stack.Screen name="home" component={TabNavigator} />
+          screenOptions={{
+            // to remove shadow between tab navigation and header
+            headerShadowVisible: false,
+            headerStyle: {
+              backgroundColor: theme.colors.foreground,
+            },
+            headerTintColor: theme.colors.text,
+            headerTitleAlign: 'left',
+            headerTitleStyle: {
+              fontWeight: 'bold',
+            },
+          }}>
           <Stack.Screen
-            name="chat"
+            name="Home"
+            component={TabNavigator}
+            options={{
+              title: 'WhatsApp',
+              headerRight: () => <TopNavbar />,
+            }}
+          />
+          {/* <Stack.Screen name="TabNavigator" component={TopNavbar} /> */}
+          <Stack.Screen
+            name="Chat"
             component={Chat}
             // options={{ headerTitle: props => <ChatHeader {...props} /> }}
           />
