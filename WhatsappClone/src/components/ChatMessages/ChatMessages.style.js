@@ -5,9 +5,10 @@ import { theme } from '../../../utils';
 export default StyleSheet.create({
   container: { padding: 10 },
   messageBox: {
-    backgroundColor: theme.colors.secondaryText,
-    marginRight: 50,
-    borderRadius: 5,
-    padding: 10,
+    borderRadius: 15,
+    padding: 8,
   },
+  message: { color: 'black', fontSize: 15 },
+  name: { color: theme.colors.tertiary },
+  time: { alignSelf: 'flex-end', color: 'grey' },
 });
