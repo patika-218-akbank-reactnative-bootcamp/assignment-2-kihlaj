@@ -16,8 +16,10 @@ const TabNavigator = () => {
   } = React.useContext(Context);
   return (
     <Tab.Navigator
+      // default options to use for the screens
       screenOptions={{
         tabBarPosition: 'top',
+        // to make white thick line at the bottom of the tab
         tabBarIndicatorStyle: {
           backgroundColor: colors.text,
           height: 4,
@@ -25,43 +27,30 @@ const TabNavigator = () => {
         tabBarStyle: {
           backgroundColor: colors.foreground,
         },
-        tabBarContentContainerStyle: {
-          // flexDirection: 'row',
-          // flex: 1,
-          // justifyContent: 'space-between',
-          // alignItems: 'center',
-        },
         tabBarLabelStyle: {
           fontWeight: '600',
         },
+        // when it is active or not change color
         tabBarActiveTintColor: colors.text,
         tabBarInactiveTintColor: colors.secondaryText,
       }}
+      // when app opened for the first time which tab to show
       initialRouteName="Chats">
       <Tab.Screen
         name="Camera"
         component={Camera}
         options={{
+          // to show icon
           tabBarIcon: ({ color }) => (
             <AntDesign name="camera" size={24} color={color} />
           ),
+          // to remove label of the tab to show only icon
           tabBarLabel: () => null,
-          // tabBarItemStyle: { width: 50 },
-          // tabBarIconStyle: { width: 75 },
         }}
       />
-      <Tab.Screen
-        name="Chats"
-        component={Chats}
-      />
-      <Tab.Screen
-        name="Status"
-        component={Status}
-      />
-      <Tab.Screen
-        name="Calls"
-        component={Calls}
-      />
+      <Tab.Screen name="Chats" component={Chats} />
+      <Tab.Screen name="Status" component={Status} />
+      <Tab.Screen name="Calls" component={Calls} />
     </Tab.Navigator>
   );
 };

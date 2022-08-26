@@ -4,7 +4,7 @@ const palette = {
   green: '#25d366',
   lime: '#dcf8c6',
   white: '#ffffff',
-  smokeWhite: '#ece5dd',
+  smokeWhite: '#e5e5e5',
 };
 
 export const theme = {

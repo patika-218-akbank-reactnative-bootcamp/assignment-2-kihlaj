@@ -12,6 +12,10 @@ const chatList = [
         text: 'Hello',
         dateTime: '2022-08-20T19:00:00.000Z',
       },
+      {
+        text: 'Hello12',
+        dateTime: '2022-08-20T18:00:00.000Z',
+      },
     ],
   },
   {

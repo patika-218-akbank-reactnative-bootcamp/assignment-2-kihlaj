@@ -53,7 +53,13 @@ const App = () => {
             options={({ route }) => ({
               // to display the title by passing parameters to the route
               headerTitle: route.params.name,
-              headerRight: () => <ChatNavbar />,
+              headerRight: () => (
+                <ChatNavbar
+                  firstIcon="videocamera"
+                  secondIcon="phone"
+                  thirdIcon="dots-three-vertical"
+                />
+              ),
             })}
           />
         </Stack.Navigator>
