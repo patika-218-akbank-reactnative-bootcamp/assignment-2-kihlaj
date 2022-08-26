@@ -1,7 +1,5 @@
 import React from 'react';
-import { View, Text, Button, FlatList } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { View, FlatList } from 'react-native';
 
 import styles from './Chats.style';
 import ContactsFloatingIcon from '../../components/ContactsFloatingIcon';

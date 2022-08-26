@@ -1,19 +1,21 @@
 import React from 'react';
-import { FlatList } from 'react-native';
-import { useRoute } from '@react-navigation/native';
+import { FlatList, ImageBackground } from 'react-native';
 
 import styles from './Chat.style';
 import ChatMessages from '../../components/ChatMessages';
 import chatList from '../../../data/Chats';
+import background from '../../../assets/background.jpg';
+import ChatInput from '../../components/ChatInput';
 
 const Chat = () => {
-  // to query the messages to this page
-  const route = useRoute();
   return (
-    <FlatList
-      data={chatList.messages}
-      renderItem={({ item }) => <ChatMessages message={item} />}
-    />
+    <ImageBackground source={background} style={styles.image}>
+      <FlatList
+        data={chatList.messages}
+        renderItem={({ item }) => <ChatMessages message={item} />}
+      />
+      <ChatInput />
+    </ImageBackground>
   );
 };
 

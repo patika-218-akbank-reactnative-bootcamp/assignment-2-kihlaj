@@ -1,15 +1,11 @@
 import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import Entypo from 'react-native-vector-icons/Entypo';
-import AntDesign from 'react-native-vector-icons/AntDesign';
 
-// import TopNavbar from './components/TopNavbar';
 import ContextWrapper from '../context/ContextWrapper';
 import TabNavigator from './TabNavigator';
 import Chat from './pages/Chat';
 import { theme } from '../utils';
-import { TouchableOpacity, View } from 'react-native';
 import TopNavbar from './components/TopNavbar/TopNavbar';
 import ChatNavbar from './components/ChatNavbar';
 
@@ -45,11 +41,9 @@ const App = () => {
               ),
             }}
           />
-          {/* <Stack.Screen name="TabNavigator" component={TopNavbar} /> */}
           <Stack.Screen
             name="Chat"
             component={Chat}
-            // options={{ headerTitle: props => <ChatHeader {...props} /> }}
             options={({ route }) => ({
               // to display the title by passing parameters to the route
               headerTitle: route.params.name,

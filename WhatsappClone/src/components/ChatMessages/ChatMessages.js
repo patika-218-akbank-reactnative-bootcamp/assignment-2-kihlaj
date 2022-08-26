@@ -18,6 +18,7 @@ const ChatMessages = props => {
       <View
         style={[
           styles.messageBox,
+          // inline css used since logic cannot be done in stylesheet
           {
             backgroundColor: isMyMessage()
               ? theme.colors.tertiary

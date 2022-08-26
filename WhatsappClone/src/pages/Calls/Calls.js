@@ -1,7 +1,7 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import { View, Text } from 'react-native';
 
-import styles from './Calls.style';
+// import styles from './Calls.style';
 
 const Calls = () => {
   return (

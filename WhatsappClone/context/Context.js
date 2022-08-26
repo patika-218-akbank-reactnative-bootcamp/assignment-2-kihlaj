@@ -1,5 +1,5 @@
 import React from 'react';
-import {theme} from '../utils';
+import { theme } from '../utils';
 
 const GlobalContext = React.createContext({
   theme,
