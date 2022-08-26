@@ -14,7 +14,11 @@ const ChatListItem = props => {
 
   // onClick function to navigate to chat page
   const onClick = () => {
-    navigation.navigate('Chat', { id: chatList.id });
+    // passing parameters as navigation happens
+    navigation.navigate('Chat', {
+      id: chatList.id,
+      name: `${chatList.receiver.firstName} ${chatList.receiver.lastName}`,
+    });
   };
 
   return (

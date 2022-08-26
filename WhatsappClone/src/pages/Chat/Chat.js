@@ -9,7 +9,7 @@ const Chat = () => {
   // to query the messages to this page
   const route = useRoute();
 
-  console.log(route.params);
+  // console.log(route.params);
 
   return (
     <View>

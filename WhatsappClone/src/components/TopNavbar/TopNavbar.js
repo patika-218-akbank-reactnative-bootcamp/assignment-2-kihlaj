@@ -6,19 +6,20 @@ import AntDesign from 'react-native-vector-icons/AntDesign';
 import styles from './TopNavbar.style';
 
 // could and maybe should have add icons as props!
-const TopNavbar = ({ text }) => {
+const TopNavbar = ({ firstIcon, secondIcon }) => {
   return (
-    <View style={{ flexDirection: 'row-reverse', padding: 10 }}>
+    <View
+      style={{
+        flexDirection: 'row',
+        padding: 15,
+        width: 90,
+        justifyContent: 'space-between',
+      }}>
       <Pressable>
-        <Entypo
-          style={{ marginLeft: 18 }}
-          name="dots-three-vertical"
-          color="white"
-          size={20}
-        />
+        <AntDesign name={firstIcon} color="white" size={23} />
       </Pressable>
       <Pressable>
-        <AntDesign name="search1" color="white" size={20} />
+        <Entypo name={secondIcon} color="white" size={23} />
       </Pressable>
     </View>
   );

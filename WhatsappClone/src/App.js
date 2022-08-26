@@ -11,6 +11,7 @@ import Chat from './pages/Chat';
 import { theme } from '../utils';
 import { TouchableOpacity, View } from 'react-native';
 import TopNavbar from './components/TopNavbar/TopNavbar';
+import ChatNavbar from './components/ChatNavbar';
 
 const Stack = createNativeStackNavigator();
 
@@ -36,7 +37,12 @@ const App = () => {
             component={TabNavigator}
             options={{
               title: 'WhatsApp',
-              headerRight: () => <TopNavbar />,
+              headerRight: () => (
+                <TopNavbar
+                  firstIcon="search1"
+                  secondIcon="dots-three-vertical"
+                />
+              ),
             }}
           />
           {/* <Stack.Screen name="TabNavigator" component={TopNavbar} /> */}
@@ -44,6 +50,11 @@ const App = () => {
             name="Chat"
             component={Chat}
             // options={{ headerTitle: props => <ChatHeader {...props} /> }}
+            options={({ route }) => ({
+              // to display the title by passing parameters to the route
+              headerTitle: route.params.name,
+              headerRight: () => <ChatNavbar />,
+            })}
           />
         </Stack.Navigator>
       </NavigationContainer>
