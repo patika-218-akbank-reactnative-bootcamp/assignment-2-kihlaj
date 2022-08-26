@@ -14,7 +14,12 @@ const Chat = () => {
         data={chatList.messages}
         renderItem={({ item }) => <ChatMessages message={item} />}
       />
-      <ChatInput />
+      <ChatInput
+        firstIcon="smileo"
+        secondIcon="attachment"
+        thirdIcon="videocamera"
+        fourthIcon="paper-plane"
+      />
     </ImageBackground>
   );
 };
